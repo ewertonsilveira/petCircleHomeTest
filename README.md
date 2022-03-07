@@ -35,9 +35,7 @@ There are quite substantial benefits on having a centraled access point to push 
 
 ## Once in DW, What will you do to make it usable
 
-I would create some schemas/virtual tables that matches user sessions with interactions/pages/events. Don't know exaclty the best approach for this, but I heard people talking about Looker to analyse data, data manipulations, etc. Somehow we need to enable the other departments, such as the Data Scientists to consume a more friendly data set. 
-
-Grant access to other interfaces e.g. looker, Vertex AI jobs, etc. And also communicate with stakeholders to heep them informed.
+I would create some schemas/virtual tables that matches user sessions with interactions/pages/events. Don't know exaclty the best approach for this, but I heard people talking about Looker to analyse data, data manipulations, etc. Somehow we need to enable the other departments, such as the Data Scientists to access and consume a more friendly data set. Grant access to other interfaces e.g. looker, Vertex AI jobs, etc. And also communicate with stakeholders to keep them informed.
 
 ---
 
