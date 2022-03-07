@@ -24,7 +24,7 @@ The website can freely decide what and when to push the data to the specified AP
 
 
 ### What
-I would capture the user interaction with the website. An example is if we present a personalized content, does the user clicks on it? Does the user follows the assumed flow that would lead to the main site or drops it? From the homepage, does the user clicks on a product and buy it? (even though GoogleAnalyctics have all that data 😅 - maybe we can grab GA info into BigQuery? Found this doc [here.](https://support.google.com/analytics/answer/3416092?hl=en#zippy=%2Cin-this-article)
+I would capture the user interaction with the website. An example is if we present a personalized content, does the user clicks on it? Does the user follows the assumed flow that would lead to the main site or drops it? From the homepage, does the user clicks on a product and buy it? If required, product info update, e.g. stock, image, description, shipping, etc. (even though GoogleAnalyctics have all that data 😅 - maybe we can grab GA info into BigQuery? Found this doc [here.](https://support.google.com/analytics/answer/3416092?hl=en#zippy=%2Cin-this-article)
 
 
 ### Why
@@ -35,7 +35,9 @@ There are quite substantial benefits on having a centraled access point to push 
 
 ## Once in DW, What will you do to make it usable
 
-I would create some schemas/virtual tables that matches user sessions with interactions/pages/events. Don't know exaclty the best approach for this, but I heard people talking about Looker to analyse data, data manipulations, etc. Somehow we need to enable the other departments, such as the Data Scientists to consume a more friendly data set.  
+I would create some schemas/virtual tables that matches user sessions with interactions/pages/events. Don't know exaclty the best approach for this, but I heard people talking about Looker to analyse data, data manipulations, etc. Somehow we need to enable the other departments, such as the Data Scientists to consume a more friendly data set. 
+
+Grant access to other interfaces e.g. looker, Vertex AI jobs, etc. And also communicate with stakeholders to heep them informed.
 
 ---
 
@@ -43,9 +45,9 @@ I would create some schemas/virtual tables that matches user sessions with inter
 For webpage navigation content: 
 - User session
 - CorrelationId 
-- Segment
+- Segment/Group/Product
 - SourceFrom /Where it originated from
-- User from page
+- Page the user came from
 - SourceTo/Where it landed on
-- User landed on page
+- Page that the user landed on
 - DateCreated
