@@ -33,8 +33,10 @@ There are quite substantial benefits on having a centraled access point to push 
 
 ---
 
-## Once in DW, What will you do to make it usable:
+## Once in DW, What will you do to make it usable
+
 I would create some schemas/virtual tables that matches user sessions with interactions/pages/events. Don't know exaclty the best approach for this, but I heard people talking about Looker to analyse data, data manipulations, etc. Somehow we need to enable the other departments, such as the Data Scientists to consume a more friendly data set.  
+
 ---
 
 ## Data is ready to report on, this is what content the reports will have:
